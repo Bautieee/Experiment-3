@@ -1,0 +1,30 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main ()
+{
+	int N, A = 10;
+	float number[10], tot, ave;
+	
+	for (N = 0; N < A; N++) {
+			cout << "Your number ma'am' " << N + 1 << ": ";
+			cin >> number[N];
+	}
+	
+	cout << "\n\nDisplay \n" << endl;
+	
+	for (N = 0; N < A; ++N) {
+			cout << "Enter number " << N + 1 << ": ";
+			cout << number[N] << endl;
+	}
+	
+	tot = number[0] + number[1] + number[2] + number[3] + number[4] + number[5] + number[6] + number[7] + number[8] + number[9];
+	
+	ave = tot/ A;
+	
+	cout << "\nTotal: " << tot << endl;
+	cout << "Average: " << ave;
+	
+	_getch();
+	return 0;
+}
